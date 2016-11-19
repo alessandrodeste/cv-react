@@ -27,7 +27,7 @@ function Basics (props) {
             <span className="glyphicon glyphicon-map-marker" aria-hidden="true"></span></a>
           </div>
           <div className="yearOfBirth">Year of birth: {props.basics.yearOfBirth}</div>
-          <div className="phone">{props.basics.phone}</div>
+          <div className="phone"><a href={"tel: " + props.basics.phone}>{props.basics.phone}</a></div>
           <div className="email"><a href={"mailto: " + props.basics.email}>{props.basics.email}</a></div>
           {props.basics.profiles.map(function(profile, i) {
             return <div className="network" key={i}><a href={profile.url}>{profile.url}</a></div>

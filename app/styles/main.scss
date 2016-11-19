@@ -21,9 +21,12 @@ a {
     margin: 60px auto;
     border-top: 5px solid $blue;
     min-width: 1060px;
+
+    @media (max-width: 1200px) {
+        width: 100%;
+        min-width: auto;
+    }
 }
-
-
 
 .resume__basic {
     &__tops {
@@ -158,11 +161,24 @@ a {
 }
 
 
-@media (max-width: 800px) {
-    #app {
-        width: 100%;
-        min-width: auto;
+@media (max-width: 1050px) {
+    .resume__basic {
+        &__tops {
+            width: 50%;
+            h1 {
+                font-size: 35px;
+            }
+            h3 {
+                font-size: 20px;
+            }
+        }
+        &__detail {
+            width: 50%;
+        }
     }
+}
+
+@media (max-width: 800px) {
     .resume__basic {
         &__tops {
             width: 100%;
@@ -178,7 +194,6 @@ a {
         }
     }
     .resume__work {
-
         &__company {
             &__head {
                 width: 100%;
@@ -190,18 +205,41 @@ a {
             }
             &__summary {
                 width: 100%;
+            }            
+        }
+    }
+}
+@media (max-width: 500px) {
+     .resume__basic {
+        &__tops {
+            h1 {
+                font-size: 30px;
             }
-            
+            h3 {
+                font-size: 20px;
+            }
+        }
+        &__detail {
+            font-size: 14px;
+        }
+        &__summary {
+            font-size: 14px;
+            letter-spacing: 1px;                
+        }
+     }
+}
+@media (max-width: 400px) {
+    .resume__basic {
+        &__img {
+            width: 100%;
+            text-align: center;
+        }
+         &__content {
+            width: 100%;
         }
     }
 }
 
-@media (max-width: 1200px) {
-    #app {
-        width: 100%;
-        min-width: auto;
-    }
-}
 
 @media print {
     body {    
