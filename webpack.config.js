@@ -1,7 +1,9 @@
 var path = require('path');
+var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+var prod = process.argv.indexOf('-p') !== -1;
 
-module.exports = {
+var config = {
   entry: [
     './app/index.js'
   ],
@@ -31,8 +33,6 @@ module.exports = {
         loader: "file-loader?name=/assets/[name].[ext]", 
         include: path.resolve(__dirname, "assets") 
       },
-      //{ test: /\.(png|jpg)$/, loader: 'url-loader?limit=8192', include: path.resolve(__dirname, "assets") },
-      //{ test: /\.pdf$|\.vcf$/, loader: "file" } ,
       {test: /\.json$/, loader: "json-loader", include: path.resolve(__dirname, "assets")}
     ]
   },
@@ -44,3 +44,18 @@ module.exports = {
     })
   ]
 };
+
+if (prod) {
+  config.plugins.push(
+    new webpack.DefinePlugin({
+      'process.env': {
+        NODE_ENV: JSON.stringify('production')
+      }
+    }),
+    new webpack.optimize.DedupePlugin(),
+    new webpack.optimize.UglifyJsPlugin(),
+    new webpack.optimize.AggressiveMergingPlugin()
+  );
+} 
+
+module.exports = config;
