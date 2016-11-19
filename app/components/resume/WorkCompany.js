@@ -13,10 +13,10 @@ function WorkCompany (props) {
     <div className="resume__work__company">
       <div className="resume__work__company__head">         
         <h3>{props.info.company} </h3>
-        { props.info.position && <div className="resume__work__position">as {props.info.position}</div>}
-        { props.info.startDate && <div className="resume__work__start"> from {formatDate(props.info.startDate)} </div>}
-        { props.info.endDate && <div className="resume__work__end"> to {formatDate(props.info.endDate)}</div>}
-        { !props.info.endDate && <div className="resume__work__end"> to present</div>}
+        { props.info.position && <div className="resume__work__company__head__position">as {props.info.position}</div>}
+        { props.info.startDate && <div className="resume__work__company__head__start"> from {formatDate(props.info.startDate)} </div>}
+        { props.info.endDate && <div className="resume__work__company__head__end"> to {formatDate(props.info.endDate)}</div>}
+        { !props.info.endDate && <div className="resume__work__company__head__end"> to present</div>}
       </div>
       <div className="resume__work__company__summary">
         <div className="summary" dangerouslySetInnerHTML={{__html: props.info.summary}} />

@@ -23,11 +23,7 @@ a {
     min-width: 1060px;
 }
 
-@media screen and (max-width: 1600px) {
-    #app {
-        width: 100%;
-    }
-}
+
 
 .resume__basic {
     &__tops {
@@ -113,15 +109,24 @@ a {
             border: none;
         }
 
-        h3 {
-            margin: 0;
-            padding: 0;
-        }
-
         &__head {
             width: 350px;
             display: inline-block;
             vertical-align: top;
+
+            h3 {
+                margin: 0;
+                padding: 0;
+            }
+            
+            &__position {
+                font-weight: bold;   
+            }
+            &__end, 
+            &__start {
+                display: inline-block;
+                margin-right: 4px;
+            }
         }
         &__summary {
             width: calc(100% - 350px);
@@ -141,15 +146,6 @@ a {
             }
         }
     }
-
-    &__position {
-        font-weight: bold;   
-    }
-    &__end, 
-    &__start {
-        display: inline-block;
-        margin-right: 4px;
-    }
 }
 
 .resume__greetings {
@@ -158,6 +154,52 @@ a {
     & .panel-footer {
         background-color: $white;
         padding: 20px 30px;
+    }
+}
+
+
+@media (max-width: 800px) {
+    #app {
+        width: 100%;
+        min-width: auto;
+    }
+    .resume__basic {
+        &__tops {
+            width: 100%;
+            padding: 20px 30px; 
+        }
+        &__detail {
+            width: 100%;
+            margin: 0;
+            padding: 0 30px 20px;
+        }
+        &__summary {
+            margin: 0 30px 20px;
+        }
+    }
+    .resume__work {
+
+        &__company {
+            &__head {
+                width: 100%;
+                margin-bottom: 10px;
+                &__end, 
+                &__start {
+                    font-style: italic;
+                }
+            }
+            &__summary {
+                width: 100%;
+            }
+            
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    #app {
+        width: 100%;
+        min-width: auto;
     }
 }
 
