@@ -1,0 +1,47 @@
+{
+  "name": "cv-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "prod": "webpack -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alessandrodeste/cv-react.git"
+  },
+  "keywords": [
+    "cv",
+    "resume",
+    "json",
+    "react"
+  ],
+  "author": "Alessandro d'Este",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alessandrodeste/cv-react/issues"
+  },
+  "homepage": "https://github.com/alessandrodeste/cv-react#readme",
+  "dependencies": {
+    "json-loader": "^0.5.4",
+    "promise-polyfill": "^6.0.2",
+    "react": "^15.3.2",
+    "react-addons-css-transition-group": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "react-router": "^2.8.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "css-loader": "^0.23.1",
+    "html-webpack-plugin": "^2.7.1",
+    "node-sass": "^3.12.5",
+    "sass-loader": "^4.0.2",
+    "style-loader": "^0.13.0",
+    "webpack": "^1.13.3",
+    "webpack-dev-server": "^1.16.2"
+  }
+}

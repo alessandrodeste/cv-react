@@ -1,0 +1,130 @@
+{
+  "basics": {
+    "name": "Alessandro d'Este",
+    "label": "Developer, Team Leader",
+    "picture": "foto.jpg",
+    "email": "alessandro@deste.org",
+    "phone": "(+39) 329 85 73 470",
+    "website": "http://ale.deste.org",
+    "yearOfBirth": 1983,
+    "summary": "Reliable, Dynamic, Result-Oriented",
+    "location": {            
+      "city": "Padova",
+      "countryCode": "Italy",     
+      "map": "https://www.google.it/maps?q=padova,+italia&sll=45.735846599999995,11.861969999999998&sspn=3.541841772667032,10.621059185560574&t=m&hnear=Padova,+Veneto&z=10"
+    },
+    "downloads": ["ENG.pdf", "vCard.vcf"],
+    "profiles": [{
+      "network": "Linkedin",
+      "username": "deste",
+      "url": "http://it.linkedin.com/in/deste"
+    }]
+  },
+  "work": [{
+    "company": "THRON",    
+    "position": "UX Architect",
+    "website": "http://www.thron.com",
+    "startDate": "2015-05-01",
+    "endDate": "",
+    "summary": "Started as developer, working on an existing javascript framework based on Knockout.js. <br />September 2015: I was promoted to operations manager in an amazing front-end team. <br />July 2016: I'm working as Architect and Team Leader in the UX team.",
+    "highlights": [
+      "javascript", "knockout", "operation manager", "team building", "architect", "agile", "scala", "node.js", "react", "mongodb"
+    ]
+  }, {
+    "company": "Lynx S.p.A.",    
+    "position": "Developer",
+    "website": "http://www.lynxspa.com/",
+    "startDate": "2014-03-01",
+    "endDate": "2015-04-01",
+    "summary": "Developer for bank/financial software.<br />Main projects:<br />- Worked on a POC of new infrastructure as WPF developer, side by side with Microsoft team in Tourin.<br />- Worked on paperless related projects (C# and WCF technology).<br />- Working on a POC of new infrastructure as HTML5 and JS developer, side by side with Microsoft team in Vicenza (using Knockout.js, TypeScript, css3, Bootstrap) <br />- Ended as team leader on small group focus on paperless management software.",
+    "highlights": [
+      "HTML5", "Javascript", "Knockout", "C#", "WPF", "WCF", ".Net"
+    ]
+  }, {
+    "company": "Freelance",    
+    "position": "Consultant",
+    "website": "",
+    "startDate": "2012-01-01",
+    "endDate": "2016-01-01",
+    "summary": "Development and consulting projects. Technologies used (mainly): HTML5 and Javascript (AngularJS, Bootstrap, NodeJS), C# (WPF, WCF). Continue the collaboration with B&B and Ambiente.it.",
+    "highlights": [
+      "Javascript", "AngularJS", "Bootstrap", "NodeJS", "C#", "WPF", "WCF", ".Net", "SAP", "SAP Business One"
+    ]
+  }, {
+    "company": "BeB sas",    
+    "position": "Consultant, Partner",
+    "website": "http://bil-x.com/",
+    "startDate": "2010-05-01",
+    "endDate": "2013-12-01",
+    "summary": "Analysis, development and project management in a small team to create the product BIL-X and BIL-X Cloud (in short: starting from customer accounts create the book of consolidated financial statements passing through XBRL entities). Relationships with customers, deployments and training. This product is now used in more than eight big holding companies. Reporting with Sap BPC and SAP BW (BEx Analyzer, Query Designer and Transport) and small customization with ABAP language. <br />I've installed Kofax Capture in several bank group officies.",
+    "highlights": [
+      "HTML5", "Javascript", "C#", "WPF", ".Net", "XBRL", "iXBRL", "SAP", "KOFAX"
+    ]
+  }, {
+    "company": "Hospital Engineering",    
+    "position": "Consultant, Developer, Analyst",
+    "website": "",
+    "startDate": "2010-01-01",
+    "endDate": "2011-12-01",
+    "summary": "I've collaborated as software developer and analyst for medicals company",
+    "highlights": [
+      "C#", "MySql", "MsSql", "VB6", "PHP"
+    ]
+  }, {
+    "company": "Ambiente.it",    
+    "position": "Developer, Consultant",
+    "website": "",
+    "startDate": "2008-12-01",
+    "endDate": "2011-12-01",
+    "summary": "I've developed mainly with SAP BO SDK. I had responsibilities as project manager, and has taken care of clients and executed analysis.<br /> <br />Used technologies:<br />- C# (SAP BO library and custom software)<br />- Java (Spring)<br />- Javascript (Dojo)<br />- Php (sugarcrm and custom software)",
+    "highlights": [
+      "SAP Business One", "Java", "C#", "Spring", "Sugar CRM", "PHP"
+    ]
+  }, {
+    "company": "Arcua srl",    
+    "position": "Developer, Consultant",
+    "website": "",
+    "startDate": "2004-01-01",
+    "endDate": "2011-12-01",
+    "summary": "Customer management, software design and development, project management. <br />Over the years, I was the main technical reference for many companies.<br /><br /><br />Among them:<br />Progress & Partners S.r.l. (now divided into 7Gold and Actitude, media and communication) [Java, system administration, C#, MySql];<br /><br />Pipinato Calzature S.p.A. (which operates in the large-scale retail trade, footwear) [Java, SCO-linux with basic, ASP.net, MySql];<br /><br />ZA Ricambi S.r.l. (large-scale retail trade auto parts). [PHP, MySql, Java, SCO-linux]<br /><br />In 2007 and 2008 I have worked with DE.RE.COM as developer (professional home automation and digital signage). [AS3 FLEX, php, firebird dbms, Delphi]",
+    "highlights": [
+      "Flex", "AS3", "C#", "Java", "MySql", "SQL", "Crystal Report", "Linux"
+    ]
+  }, {
+    "company": "Nuova fotografia",    
+    "position": "Developer, Consultant",
+    "website": "",
+    "startDate": "2007-01-01",
+    "endDate": "2010-12-01",
+    "summary": "collaborates as software developer and UI specialist",
+    "highlights": [
+      "PHP", "wordpress", "joomla", "drupal", "javascript"
+    ]
+  }], 
+  "languages": [{
+    "name": "Italian",
+    "level": "Native speaker"
+  }, {
+    "name": "English",
+    "level": "Professional working proficiency"
+  }],
+  "interests": [{
+    "name": "Socials",
+    "keywords": [
+      "rugby",
+      "sailings",
+      "boardgames",
+      "skiing",
+      "motorcycle"
+    ]
+  }, {
+    "name": "Culturals",
+    "keywords": [
+      "violing",
+      "traditional dances",
+      "reading",
+      "photography"
+    ]
+  }],
+  "greetings": "Thank you for taking the time to read this resume. More info on <a href=\"http://it.linkedin.com/in/deste\" target=_blank>Linkedin</a>"
+}

@@ -1,0 +1,175 @@
+
+$black: #333;
+$lightBlack: #888;
+$white: #F9F9F9;
+$blue: #417799;
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: $lightBlack url('/assets/background.jpg') top right no-repeat fixed;
+    color: $black;
+    font-size: 16px;    
+}
+
+a {
+    color: $blue;
+}
+
+#app {
+    background: $white;
+    width: 65%;
+    margin: 60px auto;
+    border-top: 5px solid $blue;
+    min-width: 1060px;
+}
+
+@media screen and (max-width: 1600px) {
+    #app {
+        width: 100%;
+    }
+}
+
+.resume__basic {
+    &__tops {
+        display: inline-block;
+        width: 60%;
+        padding: 60px 30px;        
+        vertical-align: top;
+
+        h1 {
+            font-family: Georgia, 'Times New Roman', Times, serif;     
+            font-size: 45px;  
+            text-transform: uppercase;
+            color: $blue; 
+            padding-left: 30px;
+            margin-top: 15px;
+        }
+        h3 {
+            margin-top: 0px;
+            padding-left: 30px;
+        }
+    }
+
+    &__downloads {
+        border-bottom: 1px solid $lightBlack;
+        margin: 0 30px 7px 0;
+        padding-bottom: 7px;
+
+        a:hover {
+            background: #CCC;
+        }
+
+        a {
+            background: $lightBlack;
+            border: #333;
+            margin: 6px;    
+        }
+    }
+
+    &__detail {
+        display: inline-block;
+        width: 40%;    
+        margin-top: 30px;
+    }
+
+    &__img {
+        display: inline-block;
+        width: 160px;
+
+        img {
+            vertical-align: baseline;
+            width: 160px;
+        }
+    }
+
+    &__content {
+        vertical-align: top;
+        display: inline-block;
+        width: calc(100% - 160px);
+        padding: 0 0 0 15px;
+    }
+
+    &__summary {
+        margin: 0 30px;
+        padding: 5px;
+        background: $blue;
+        color: $white;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+    }
+}
+
+.resume__work {
+    margin: 0 30px;
+
+    &__company {
+        margin: 30px 0;
+        padding: 0 30px 30px;
+        border-bottom: 1px solid $lightBlack;
+
+        &:last-child {
+            margin-bottom: 0;
+            border: none;
+        }
+
+        h3 {
+            margin: 0;
+            padding: 0;
+        }
+
+        &__head {
+            width: 350px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        &__summary {
+            width: calc(100% - 350px);
+            display: inline-block;
+            vertical-align: top;
+
+            .highlights {
+                margin: 15px 5px 5px 0;
+                .badge {
+                    margin: 5px 5px 5px 0;
+                    background-color: $blue;
+                    padding: 5px 15px;
+                    font-size: 14px;
+                    font-weight: normal;
+                    letter-spacing: 2px;
+                }
+            }
+        }
+    }
+
+    &__position {
+        font-weight: bold;   
+    }
+    &__end, 
+    &__start {
+        display: inline-block;
+        margin-right: 4px;
+    }
+}
+
+.resume__greetings {
+    padding: 0 30px;   
+    color: $lightBlack;
+    & .panel-footer {
+        background-color: $white;
+        padding: 20px 30px;
+    }
+}
+
+@media print {
+    body {    
+        background: none;
+    }
+    #app {
+        width: 100%;
+    }
+    .resume__basic__summary {
+        color: $black;
+        background: none;
+    }
+}
