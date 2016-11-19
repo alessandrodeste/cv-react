@@ -19,18 +19,18 @@ function Basics (props) {
         <div className="resume__basic__content">
           <div className="resume__basic__downloads">
             {props.basics.downloads.map(function(download, i) {
-              return <a key={i} className="btn btn-primary" href={"assets/" + download}><span className="glyphicon glyphicon-download" aria-hidden="true"></span> {download}</a>
+              return <a key={i} className="btn btn-primary" href={"../assets/" + download}><span className="glyphicon glyphicon-download" aria-hidden="true"></span> {download}</a>
             })}
           </div>
           <div className="location">
-            Location: <a href={props.basics.location.map}>{props.basics.location.city} ({props.basics.location.countryCode}) 
+            Location: <a href={props.basics.location.map} target="_blank">{props.basics.location.city} ({props.basics.location.countryCode}) 
             <span className="glyphicon glyphicon-map-marker" aria-hidden="true"></span></a>
           </div>
           <div className="yearOfBirth">Year of birth: {props.basics.yearOfBirth}</div>
           <div className="phone"><a href={"tel: " + props.basics.phone}>{props.basics.phone}</a></div>
           <div className="email"><a href={"mailto: " + props.basics.email}>{props.basics.email}</a></div>
           {props.basics.profiles.map(function(profile, i) {
-            return <div className="network" key={i}><a href={profile.url}>{profile.url}</a></div>
+            return <div className="network" key={i}><a href={profile.url} target="_blank">{profile.url}</a></div>
           })}
 
         </div>
