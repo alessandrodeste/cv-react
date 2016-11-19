@@ -157,6 +157,11 @@ a {
     & .panel-footer {
         background-color: $white;
         padding: 20px 30px;
+        line-height: 40px;
+        img {
+            width: 30px;
+            height: 30px;
+        }
     }
 }
 
