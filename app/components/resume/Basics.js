@@ -19,7 +19,7 @@ function Basics (props) {
         <div className="resume__basic__content">
           <div className="resume__basic__downloads">
             {props.basics.downloads.map(function(download, i) {
-              return <a key={i} className="btn btn-primary" href={"../assets/" + download}><span className="glyphicon glyphicon-download" aria-hidden="true"></span> {download}</a>
+              return <a key={i} className="btn btn-primary" href={"../assets/" + download} target="_blank"><span className="glyphicon glyphicon-download" aria-hidden="true"></span> {download}</a>
             })}
           </div>
           <div className="location">
