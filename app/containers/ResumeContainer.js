@@ -16,7 +16,11 @@ var ResumeContainer = React.createClass({
     
     resumeHelpers.get()
       .then(function (json) {
-         this.setState({
+        // Refresh title
+        if (json) document.title = json.basics.name + " - Curriculum Vitae";
+
+        // Refresh page with data 
+        this.setState({
             resume: json,
             isLoading: false
         })
