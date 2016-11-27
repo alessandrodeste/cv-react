@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "Alessandro d'Este",
-    "label": "Developer, Team Leader",
+    "label": "Lead Developer / Team Leader",
     "picture": "foto.jpg",
     "email": "alessandro@deste.org",
     "phone": "(+39) 329 85 73 470",
@@ -21,48 +21,48 @@
     }]
   },
   "work": [{
-    "company": "THRON",    
-    "position": "UX Architect",
+    "company": "THRON S.p.A.",    
+    "position": "Senior Software Developer Team Lead",
     "website": "http://www.thron.com",
     "startDate": "2015-05-01",
     "endDate": "",
-    "summary": "Started as developer, working on an existing javascript framework based on Knockout.js. <br />September 2015: I was promoted to operations manager in an amazing front-end team. <br />July 2016: I'm working as Architect and Team Leader in the UX team.",
+    "summary": "July 2016: I'm working as Architect and Team Leader in the UX team (5 members).<br />September 2015: I was promoted to operations manager in an amazing front-end team.<br /><br />Started as developer, working on an existing javascript framework.",
     "highlights": [
-      "javascript", "knockout", "operation manager", "team building", "architect", "agile", "scala", "node.js", "react", "mongodb"
+      "javascript", "knockout.js", "HTML5", "node.js", "css", "operation manager", "team building", "architect", "agile", "scala", "mongodb"
     ]
   }, {
     "company": "Lynx S.p.A.",    
-    "position": "Developer",
+    "position": "Senior Software Developer Team Lead",
     "website": "http://www.lynxspa.com/",
     "startDate": "2014-03-01",
     "endDate": "2015-04-01",
-    "summary": "Developer for bank/financial software.<br />Main projects:<br />- Worked on a POC of new infrastructure as WPF developer, side by side with Microsoft team in Tourin.<br />- Worked on paperless related projects (C# and WCF technology).<br />- Working on a POC of new infrastructure as HTML5 and JS developer, side by side with Microsoft team in Vicenza (using Knockout.js, TypeScript, css3, Bootstrap) <br />- Ended as team leader on small group focus on paperless management software.",
+    "summary": "Ended as team leader on small group (3 members) focus on paperless management software, started as developer for bank/financial software. <br /><br />Main projects:<br />• Worked on a POC of new infrastructure as WPF developer, side by side with Microsoft team in Tourin.<br />• Worked on paperless related projects.<br />• Working on a POC of new infrastructure as HTML5 and JS developer, side by side with Microsoft team in Vicenza",
     "highlights": [
-      "HTML5", "Javascript", "Knockout", "C#", "WPF", "WCF", ".Net"
+      "HTML5", "Javascript", "knockout.js", "C#", "WPF", "WCF", ".Net", "node.js", "css3", "Bootstrap", "SQL Server"
     ]
   }, {
-    "company": "Freelance",    
-    "position": "Consultant",
+    "company": "",    
+    "position": "Software Development Consultant / Contractor",
     "website": "",
     "startDate": "2012-01-01",
     "endDate": "2016-01-01",
-    "summary": "Development and consulting projects. Technologies used (mainly): HTML5 and Javascript (AngularJS, Bootstrap, NodeJS), C# (WPF, WCF). Continue the collaboration with B&B and Ambiente.it.",
+    "summary": "Development and consulting projects.", 
     "highlights": [
-      "Javascript", "AngularJS", "Bootstrap", "NodeJS", "C#", "WPF", "WCF", ".Net", "SAP", "SAP Business One"
+      "Javascript", "AngularJS", "Bootstrap", "HTML5", "node.js", "C#", "WPF", "WCF", ".Net", "SAP", "SAP Business One"
     ]
   }, {
-    "company": "BeB sas",    
-    "position": "Consultant, Partner",
+    "company": "B&B di Baracco Rita & C. sas",    
+    "position": "Software Development Consultant / Contractor",
     "website": "http://bil-x.com/",
     "startDate": "2010-05-01",
     "endDate": "2013-12-01",
-    "summary": "Analysis, development and project management in a small team to create the product BIL-X and BIL-X Cloud (in short: starting from customer accounts create the book of consolidated financial statements passing through XBRL entities). Relationships with customers, deployments and training. This product is now used in more than eight big holding companies. Reporting with Sap BPC and SAP BW (BEx Analyzer, Query Designer and Transport) and small customization with ABAP language. <br />I've installed Kofax Capture in several bank group officies.",
+    "summary": "Analysis, development and project management in a small team (3 members) to create the product BIL-X and BIL-X Cloud (in short: starting from customer accounts create the book of consolidated financial statements passing through XBRL entities). Relationships with customers, deployments and training. This product is now used in more than eight big holding companies.<br />Reporting with Sap BPC and SAP BW (BEx Analyzer, Query Designer and Transport) and small customization with ABAP language.<br />I've installed Kofax Capture in several bank group officies.",
     "highlights": [
-      "HTML5", "Javascript", "C#", "WPF", ".Net", "XBRL", "iXBRL", "SAP", "KOFAX"
+      "HTML5", "Javascript", "C#", "WPF", ".Net", "XBRL", "iXBRL", "SAP", "KOFAX Capture", "Mysql", "SAP BW", "SAP BPC", "ABAP"
     ]
   }, {
     "company": "Hospital Engineering",    
-    "position": "Consultant, Developer, Analyst",
+    "position": "Software Development Contractor",
     "website": "",
     "startDate": "2010-01-01",
     "endDate": "2011-12-01",
@@ -72,13 +72,13 @@
     ]
   }, {
     "company": "Ambiente.it",    
-    "position": "Developer, Consultant",
+    "position": "Software Development Contractor",
     "website": "",
     "startDate": "2008-12-01",
     "endDate": "2011-12-01",
-    "summary": "I've developed mainly with SAP BO SDK. I had responsibilities as project manager, and has taken care of clients and executed analysis.<br /> <br />Used technologies:<br />- C# (SAP BO library and custom software)<br />- Java (Spring)<br />- Javascript (Dojo)<br />- Php (sugarcrm and custom software)",
+    "summary": "I've developed mainly with SAP BO SDK. I had responsibilities as project manager, and has taken care of clients and executed analysis.",
     "highlights": [
-      "SAP Business One", "Java", "C#", "Spring", "Sugar CRM", "PHP"
+      "SAP Business One", "Java Spring", "C#", "Spring", "SugarCRM", "PHP"
     ]
   }, {
     "company": "Arcua srl",    
@@ -86,19 +86,9 @@
     "website": "",
     "startDate": "2004-01-01",
     "endDate": "2011-12-01",
-    "summary": "Customer management, software design and development, project management. <br />Over the years, I was the main technical reference for many companies.<br /><br /><br />Among them:<br />Progress & Partners S.r.l. (now divided into 7Gold and Actitude, media and communication) [Java, system administration, C#, MySql];<br /><br />Pipinato Calzature S.p.A. (which operates in the large-scale retail trade, footwear) [Java, SCO-linux with basic, ASP.net, MySql];<br /><br />ZA Ricambi S.r.l. (large-scale retail trade auto parts). [PHP, MySql, Java, SCO-linux]<br /><br />In 2007 and 2008 I have worked with DE.RE.COM as developer (professional home automation and digital signage). [AS3 FLEX, php, firebird dbms, Delphi]",
+    "summary": "Customer management, software design and development, project management.<br />Over the years, I was the main technical reference for many companies.<br /><br />Among them:<br />Progress & Partners S.r.l. (now divided into 7Gold and Actitude, media and communication)<br />Pipinato Calzature S.p.A. (which operates in the large-scale retail trade, footwear)<br />ZA Ricambi S.r.l. (large-scale retail trade auto parts).<br />In 2007 and 2008 I have worked with DE.RE.COM as developer (professional home automation and digital signage).",
     "highlights": [
-      "Flex", "AS3", "C#", "Java", "MySql", "SQL", "Crystal Report", "Linux"
-    ]
-  }, {
-    "company": "Nuova fotografia",    
-    "position": "Developer, Consultant",
-    "website": "",
-    "startDate": "2007-01-01",
-    "endDate": "2010-12-01",
-    "summary": "collaborates as software developer and UI specialist",
-    "highlights": [
-      "PHP", "wordpress", "joomla", "drupal", "javascript"
+      "PHP", "Drupal", "Joomla", "WordPress", "Flex", "AS3", "C#", "Java Swing", "MySql", "SQL", "Crystal Report", "Jasper Report", "Linux", "SCO-linux", "Basic" 
     ]
   }], 
   "languages": [{
