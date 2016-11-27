@@ -1,19 +1,19 @@
 var React = require('react');
 
 function WorkCompany (props) {
-  let formatDate = function(yyyyMMdd) {
+  let formatDate = function(date) {
     function padStr(i) {
       return (i < 10) ? "0" + i : "" + i;
     }
-    let dt = new Date(props.info.startDate);
+    let dt = new Date(date);
     return padStr((1 + dt.getMonth())) + "/" + padStr(dt.getFullYear())                  
   };
 
   return (
     <div className="resume__work__company">
       <div className="resume__work__company__head">         
-        <h3>{props.info.company} </h3>
-        { props.info.position && <div className="resume__work__company__head__position">as {props.info.position}</div>}
+        <h3>{props.info.position} </h3>
+        { props.info.company && <div className="resume__work__company__head__position">in {props.info.company}</div>}
         { props.info.startDate && <div className="resume__work__company__head__start"> from {formatDate(props.info.startDate)} </div>}
         { props.info.endDate && <div className="resume__work__company__head__end"> to {formatDate(props.info.endDate)}</div>}
         { !props.info.endDate && <div className="resume__work__company__head__end"> to present</div>}
