@@ -4,7 +4,7 @@ import Work from '../components/resume/Work';
 import Basics from '../components/resume/Basics';
 import Resume from '../components/Resume';
 
-var resumeHelpers = require('../utils/resumeHelpers');
+var Promise = require('promise-polyfill'); // poor ie polyfill
 
 class ResumeContainer extends Component {
   constructor(props) {
@@ -16,8 +16,15 @@ class ResumeContainer extends Component {
     }
   }
 
+  loadJsonResume() {
+    return new Promise(function(resolve, reject) {
+      var data = require('../../assets/resume.json');
+      resolve(data);      
+    }).catch(function (err) {console.warn('Error in load json: ', err)});
+  }
+
   componentDidMount() {    
-    resumeHelpers.get()
+    this.loadJsonResume()
       .then(function (json) {
         // Refresh title
         if (json) document.title = json.basics.name + " - Curriculum Vitae";
