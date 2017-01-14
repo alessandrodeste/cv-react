@@ -1,13 +1,9 @@
-var React = require('react');
-var ReactRouter = require('react-router');
-var Router = ReactRouter.Router;
-var Route = ReactRouter.Route;
-var hashHistory = ReactRouter.hashHistory;
-var IndexRoute = ReactRouter.IndexRoute;
-var Main = require('../components/Main');
-var ResumeContainers = require("../containers/ResumeContainer");
+import React from 'react';
+import Main from '../components/Main';
+import ResumeContainers from '../containers/ResumeContainer';
+import ReactRouter, { Router, Route, hashHistory, IndexRoute } from 'react-router';
 
-var routes = (
+const routes = (
   <Router history={hashHistory}>
     <Route path='/' component={Main}>
       <IndexRoute component={ResumeContainers} />

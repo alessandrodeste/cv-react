@@ -1,15 +1,18 @@
-var React = require('react');
-var WorkComapny = require('./WorkCompany.js')
+import React, { Component } from 'react';
+import WorkCompany from './WorkCompany';
 
-function Work (props) {
 
-  return (
-    <div className="resume__work">      
-      {!props.work ? "" : props.work.map(function(company, i) {
-        return <WorkComapny key={i} info={company} />
-      })}
-    </div>
-  )
+class Work extends Component {
+ 
+  render() {
+    return (
+      <div className="resume__work">      
+        {!this.props.work ? "" : this.props.work.map(function(company, i) {
+          return <WorkCompany key={i} info={company} />
+        })}
+      </div>
+    );
+  }
 }
 
-module.exports = Work;
+export default Work;

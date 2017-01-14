@@ -1,11 +1,14 @@
-var React = require('react');
+import React, { Component } from 'react';
 
-function Greetings (props) {
-  return (
-    <div className="resume__greetings">
-        <div className="panel-footer" dangerouslySetInnerHTML={{__html: props.greetings}} />
-    </div>
-  )
+class Greetings extends Component {
+ 
+  render() {
+    return (
+      <div className="resume__greetings">
+          <div className="panel-footer" dangerouslySetInnerHTML={{__html: this.props.greetings}} />
+      </div>
+    );
+  }
 }
 
-module.exports = Greetings;
+export default Greetings;

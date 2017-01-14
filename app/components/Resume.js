@@ -1,7 +1,7 @@
-var React = require('react');
-var Loading = require('./Loading');
+import React from 'react';
+import Loading from './Loading';
 
-function Resume (props) {
+const Resume = (props) => {
   if (props.isLoading === true) {
     return <Loading />
   }
@@ -10,7 +10,7 @@ function Resume (props) {
     <div className="resume__container">
       {props.children}
     </div>            
-  )
+  );
 }
 
-module.exports = Resume;
+export default Resume;

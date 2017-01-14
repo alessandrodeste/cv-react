@@ -1,19 +1,22 @@
-var React = require('react');
-var Resume = require('../components/Resume');
-var Basics = require('../components/resume/Basics');
-var Work = require('../components/resume/Work');
-var Greetings = require('../components/resume/Greetings');
+import React, { Component } from 'react';
+import Greetings from '../components/resume/Greetings';
+import Work from '../components/resume/Work';
+import Basics from '../components/resume/Basics';
+import Resume from '../components/Resume';
+
 var resumeHelpers = require('../utils/resumeHelpers');
 
-var ResumeContainer = React.createClass({
-  getInitialState: function () {
-    return {
+class ResumeContainer extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
       resume: {},
       isLoading: true
     }
-  },
-  componentDidMount: function () {
-    
+  }
+
+  componentDidMount() {    
     resumeHelpers.get()
       .then(function (json) {
         // Refresh title
@@ -25,8 +28,9 @@ var ResumeContainer = React.createClass({
             isLoading: false
         })
       }.bind(this))
-  },
-  render: function () {
+  }
+
+  render() {
     return (
       <Resume isLoading={this.state.isLoading} >
         <Basics basics={this.state.resume.basics} />
@@ -35,6 +39,6 @@ var ResumeContainer = React.createClass({
       </Resume>
     )
   }
-});
+}
 
-module.exports = ResumeContainer;
+export default ResumeContainer;
